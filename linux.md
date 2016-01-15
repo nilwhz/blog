@@ -237,11 +237,11 @@ set expandtab   缩进用空格表示
 `:q`  退出vim程序  
 `:q!`  退出vim程序，且无需保存文件。  
 
-`normal mode  `
+`normal mode  `  
 进入vi程序时的默认mode  
-`command mode  `
+`command mode  `  
 输入 : / 之类的符号，进入command mode。  
-`insert mode  `
+`insert mode  `  
 输入 i a o 之类的符号，进入insert mode。  
 
 在insert mode下才能输入字符。  
@@ -252,58 +252,57 @@ set expandtab   缩进用空格表示
 #### 光标移动
 在normal mode下移动光标  
 ![光标移动](https://github.com/bitmonk404/learn_note/blob/master/imgs/vim01.png)
-
 同一行之间的移动：  
-`0  shift+^  shift+$   w   b  `
+`0  shift+^  shift+$   w   b  `  
 不同行之间的移动：  
-`数字+shift+G   shift+G   数字+上下箭头  `
+`数字+shift+G   shift+G   数字+上下箭头  `  
 不同页之间的移动：  
-`ctrl+f   ctrl+b  `
+`ctrl+f   ctrl+b  `  
 返回页面顶部：  
-`gg  `
+`gg  `  
 
 #### 编辑操作
 在normal mode下  
-`a  `
+`a  `  
 在一行文本的末尾，输入 a 表示在该行末尾添加文本，自动进入insert mode。  
 
-`o  O  `
+`o  O  `  
 在当前行之下创建一个新的空白行，并进入insert mode  
 在当前行之上创建一个新的空白行，并进入insert mode  
 
-`x  dw  dd  d0  `
+`x  dw  dd  d0  `  
 `x`表示删除当前字符  
-`dw`表示剪切当前word  
+`dw`表示剪切当前word    
 `dd`表示剪切当前行  
 `d0`表示剪切光标及其光标前的，当前行的所有字符。  
 
-`yw   yy   y0  `
+`yw   yy   y0  `  
 `y`表示复制  
-`p   P  `
-`p`表示粘贴  
+`p   P  `  
+`p`表示粘贴    
 
 `u`  
 表示放弃最近一次的修改  
 
-`/  `
+`/  `  
 输入 / 进入command mode  
 输入字符，进行查找匹配，找到后输入 n 可以在匹配对象之间来回切换。  
 
 #### 多文件操作
-`vi foo test.py kk.js  `
+`vi foo test.py kk.js  `  
 用vim同时打开多个文件  
 
-`:e test.js  `
+`:e test.js  `  
 如果已经打开了vim，这时候想要再多打开一个文件，可以使用 :e test.js 的方法。  
 
-`:buffers  `
+`:buffers  `  
 显示当前vim打开了的所有文件  
 
-`:buffer 3  `
+`:buffer 3  `  
 将当前vim文件切换到第3个  
 
-`:r foo.txt  `
+`:r foo.txt  `  
 读取foo.txt文件的内容到当前操作文件的光标位置处。  
 
-`:w foo3  `
+`:w foo3  `  
 将当前正在操作的文件内容写入foo3这个文件，如果磁盘里没有foo3这个文件则自动新建一个。  
