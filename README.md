@@ -2,7 +2,7 @@
 
 - [读书笔记](https://github.com/bitmonk404/learn_note/blob/master/book)
 
-- [专题笔记](https://github.com/bitmonk404/learn_note/blob/master/blog)READMD
+- [专题笔记](https://github.com/bitmonk404/learn_note/blob/master/blog)
 
 - [Linux笔记](https://github.com/bitmonk404/learn_note/blob/master/linux.md)
 
