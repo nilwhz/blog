@@ -96,6 +96,8 @@ ctrl + shift + 上下箭头     想上（下）一行一行选中
 
 ctrl + m 在括号内移动
 ctrl + shift + m 选中括号内的内容
+
+command + shift + m 选中引号内的内容，包括引号。
 ```
 
 - 编辑
@@ -116,4 +118,6 @@ ctrl + shift + k    删除当前行整行
 ctrl + t    相邻字母互换位置
 
 command + alt + t   插入特殊符号（好酷的功能啊）
+
+shift + tab  自动对齐
 ```
