@@ -13,3 +13,5 @@
 - [SublimeText笔记](https://github.com/bitmonk404/learn_note/blob/master/subl.md)
 
 - [Python笔记](https://github.com/bitmonk404/learn_note/blob/master/python.md)
+
+- [HomeBrew笔记](https://github.com/bitmonk404/learn_note/blob/master/brew.md)
