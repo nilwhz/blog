@@ -15,3 +15,5 @@
 - [Python笔记](https://github.com/bitmonk404/learn_note/blob/master/python.md)
 
 - [HomeBrew笔记](https://github.com/bitmonk404/learn_note/blob/master/brew.md)
+
+- [数据库笔记](https://github.com/bitmonk404/learn_note/blob/master/db.md)
