@@ -121,6 +121,24 @@ linux系统下压缩工作用得最多的就是gzip命令，其次才是bzip2。
 `bzcat xx.tar.bz2`  只显示，不解压
 
 ## 网络命令
+#### 检查系统端口号监听情况
+```shell
+例如：检查3306端口的监听情况
+
+输入以下命令：
+sudo lsof -i :3306
+
+如果mysql进程正在监听该端口，结果可能是：
+COMMAND PID   USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+mysqld   73 _mysql   21u  IPv6 0xbb497661971c241d      0t0  TCP *:mysql (LISTEN)
+
+如果该端口没有被监听，则不会有信息显示在终端里。
+
+由上图显示，我们知道该进程的PID是73，所以我们可以杀掉它，输入以下命令：
+sudo kill -9 73
+这样一来，该端口的监听就结束了。
+```
+
 #### 测试网络
 `ifconfig`  查看本机ip信息  
 
