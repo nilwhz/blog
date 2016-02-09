@@ -31,3 +31,15 @@ Command + option + shift + esc 按住一两秒就退出了
 `brew install vim --override-system-vim`  
 修改.zshrc脚本，增加一行 `alias="/usr/local/bin/vim"`  
 `mv usr/bin/vim usr/bin/vim73`
+
+#### 用TimeMachine恢复系统时出错，找不到系统磁盘，且用磁盘工具无法重新格式化抹掉，解决办法。
+```shell
+进入命令终端，输入：
+diskutil cs list
+
+在输入以上命令后，在命令行显示的信息中找到：Logical Volume Group，它后面的字母就是你电脑主硬盘的UUID。
+输入以下命令：
+diskutil cs delete UUID(将UUID替换为找到的字母信息)
+
+这样，你自己的主硬盘就被重置了，随后再进入硬盘工具，就会发现已经可以重新抹掉格式化了，然后再恢复系统即可。
+```
