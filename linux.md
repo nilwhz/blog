@@ -5,6 +5,9 @@
 ctrl + a    移动到行首
 ctrl + e    移动到行尾
 
+esc + f     按单词，向前移动。
+esc + b     按单词，向后移动。
+
 ctrl + w    剪切光标前的单词
 ctrl + k    剪切光标后的所有文字
 ctrl + u    剪切当前行
