@@ -21,21 +21,30 @@ git remote set-url origin git@github.com:bitmonk404/test.git
 将远程仓库从https转换为ssh协议
 ```
 
-#### 场景模拟
+#### 撤销操作
 ```git
-提交了不安全的信息到远程仓库，想要删除git的commit历史记录：
-git log
-找到要回退的历史，输入q退出。
+0、撤销工作区中的修改。配合git status查看：
+git checkout -- test.py
+
+1、撤销index暂存区中的操作。配合git status查看：
+git reset HEAD test.py
+
+2、撤销commit过后在仓库中的内容。配合git log(输入q退出)查看：
 git reset 4caac0f83ac672981a1621ad1860b470a39c9075
-git add .
+git reset --mixed 只保留源码，回退index和commit，git reset不带参数默认就是这种。
+git reset --soft  只回复commit，保留index，想要重新提交直接commit即可。
+git reset --hard  彻底回退，连源码都不保留。
+备注：本地仓库的内容修改后，使用git push -f可以强制更新远程仓库的内容、提交历史。
+
+3、刚提交后就想修改的简单操作：
 git commit -m 'update'
-git push -f
-分析：
--f表示强制提交，如果本地和远程仓库有冲突，强制提交后，远程仓库就变成和本地仓库一样了。
-如果想要远程仓库、本地仓库的修改同时保留，可使用：git pull
-git reset -mixed 只保留源码，回退index和commit，git reset不带参数默认就是这种。
-git reset -soft  只回复commit，保留index，想要重新提交直接commit即可。
-git reset -hard  彻底回退，连源码都不保留。
+git commit --amend
+它让你有机会重新写提交信息文字。
+
+git commit -m 'update'
+git add kk.py
+git commit -amend
+它只产生了一次提交，只是增加上了kk.py文件。
 ```
 
 
