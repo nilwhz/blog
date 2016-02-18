@@ -24,9 +24,11 @@ command + shift + d     item快捷键，上下分屏。
 ```
 
 ## 基本命令
-`mkdir -p code/memeda/hah/blue`  
+```bash
+mkdir -p code/memeda/hah/blue
 建立多层次文件夹方法  
 使用 -p 参数，可以建立多层次的文件夹，意味着hah这些文件夹原来可以是不存在的。
+```
 
 ## 用户管理
 `whoami` 查看当前用户名  
@@ -148,6 +150,9 @@ sudo kill -9 73
 `ping www.baidu.com`  
 从本地主机向目标服务器发送一个特殊的包，通过服务器返回过来的数据，可以判断到该服务器的网络状况。  
 注意：有些服务器禁止了ping访问。
+
+`curl -x http://183.131.151.208:80 -L http://www.8kana.com`
+用代理ip去ping指定网站，测试该代理是否可用。
 
 #### ssh命令远程登录计算机
 `sudo apt-get install openssh-server`  在ubuntu上安装ssh服务端  
