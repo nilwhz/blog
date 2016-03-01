@@ -31,8 +31,10 @@ mkdir -p code/memeda/hah/blue
 ```
 
 ## 用户管理
-`whoami` 查看当前用户名  
-`hostname` 查看当前主机名
+```bash
+whoami 查看当前用户名  
+hostname 查看当前主机名
+```
 
 `passwd vwhz`  
 修改vwhz用户的密码  
