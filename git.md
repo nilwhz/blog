@@ -1,5 +1,41 @@
 # Git学习笔记
 
+#### 如何建立多个git账户用于ssh登录
+```bash
+举栗子：已经有github账号，公司使用gitlab账号，如何生成新的ssh key。
+
+1、在生成sshkey的时候，名字要设置不能直接回车（默认是id_rsa，这样就和github的一样了）。
+添加私钥：
+ssh-add ~/.ssh/id_rsa_github
+
+2、在.ssh目录下输入命令：touch config  创建config文件用于配置ssh登录。
+# gitlab 汇游科技
+Host hykj
+    HostName 114.215.142.80
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/id_rsa_hykj
+
+# github
+Host bitw
+    HostName github.com
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/id_rsa
+
+3、配置git用户和邮箱
+git config --global --unset user.name
+git config --global --unset user.email
+
+git config --global user.name "biw404"
+git config --global user.email "biw404@gmail.com"
+
+新建一个用于工作的工作目录，例如hykj目录。
+mkdir hykj
+cd hykj
+git init
+git config user.name "wanghz"
+git config user.email "wanghz@huiyoukeji.net"
+```
+
 #### GitHub相关命令：
 ```git
 language:Python stars:>10000
