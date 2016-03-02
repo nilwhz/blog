@@ -4,7 +4,7 @@
 ```bash
 举栗子：已经有github账号，公司使用gitlab账号，如何生成新的ssh key。
 
-1、在生成sshkey的时候，名字要设置不能直接回车（默认是id_rsa，这样就和github的一样了）。
+1、在生成ssh key的时候，名字要设置不能直接回车（默认是id_rsa，这样就和github的一样了）。
 添加私钥：
 ssh-add ~/.ssh/id_rsa_github
 
@@ -34,6 +34,10 @@ cd hykj
 git init
 git config user.name "wanghz"
 git config user.email "wanghz@huiyoukeji.net"
+
+4. 添加私钥到本地。
+ssh-add -l   显示增加过的私钥
+ssh-add -K /Users/vwhz/.ssh/id_rsa_hykj   将私钥增加到本地
 ```
 
 #### GitHub相关命令：
