@@ -38,6 +38,7 @@ git config user.email "wanghz@huiyoukeji.net"
 4. 添加私钥到本地。
 ssh-add -l   显示增加过的私钥
 ssh-add -K /Users/vwhz/.ssh/id_rsa_hykj   将私钥增加到本地
+ssh-add -l   增加过后再次查看
 ```
 
 #### GitHub相关命令：
