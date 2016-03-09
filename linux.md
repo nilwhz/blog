@@ -279,7 +279,7 @@ set expandtab   缩进用空格表示
 
 #### 光标移动
 在normal mode下移动光标  
-![光标移动](https://github.com/bitw404/blog/blob/master/imgs/vim01.png)
+![光标移动](https://github.com/nilwhz/blog/blob/master/imgs/vim01.png)
 同一行之间的移动：  
 `0  shift+^  shift+$   w   b  `  
 不同行之间的移动：  

@@ -47,7 +47,7 @@ Python3中的所有string都是按照Unicode编码进行存储的。[Unicode码�
 其实，最简单粗暴的解决方案就是：所有字符都统一使用4个字节来编码。但这样一来就大大的浪费了存储空间。为了解决这个问题，出现了UTF-8编码方式。  
 
 UTF-8其实是Unicode编码规范的一种具体实现。它规定了Unicode编码在内存中按什么格式存储，从而方便判断到底几个字节表示一个具体的字符。  
-![Unicode编码怎么转换成UTF-8编码](https://github.com/bitw404/blog/blob/master/imgs/unicode.png)
+![Unicode编码怎么转换成UTF-8编码](https://github.com/nilwhz/blog/blob/master/imgs/unicode.png)
 
 ```python
 aa = '严'
