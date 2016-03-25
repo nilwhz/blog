@@ -1,5 +1,13 @@
 # Mac学习笔记
 
+#### Mac软件
+```shell
+Alfred  神器之王。
+Snap    自定义快捷键切换软件。
+Seil    Karabiner的简单版，同一个作者的作品，用于一对一的键盘映射。
+Karabiner  该软件的文档非常详细，用该软件可以直接定制所有快捷键（用XML脚本的方式映射快捷键）。
+```
+
 #### Homebrew学习笔记
 ```shell
 安装包
