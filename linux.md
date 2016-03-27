@@ -1,6 +1,25 @@
 # Linux学习笔记
 
 ## 终端快捷键
+```iterm 2
+fn + delete     向后删除
+
+fn + 左方向    回到行首
+fn + 右方向    回到行尾
+
+ctrl + 左方向  向左移动一个单词
+ctrl + 右方向  向右移动一个单词
+
+command + 上方向   屏幕向上滚动一行
+command + 下方向   屏幕向下滚动一行
+
+command + fn + 上方向   屏幕向上滚动一页
+command + fn + 下方向   屏幕向下滚动一页
+
+command + fn + 左方向   屏幕滚回最顶部
+command + fn + 右方向   屏幕滚回最底部
+```
+
 ```shell
 ctrl + a    移动到行首
 ctrl + e    移动到行尾
