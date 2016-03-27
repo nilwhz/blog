@@ -75,6 +75,9 @@ command + alt + e  替换该单词
 alt + 回车    选中所有单词
 ctrl + alt + 回车   替换所有单词
 
+command + b   打开文件编译窗口，可以进行go vet之类的操作。（GoSublime定义的快捷键）
+
+command + g   跳转到函数定义的位置（GoSublime定义的快捷键）
 ctrl + 减号    退回跳转之前的文件光标位置
 ctrl + shift + 减号    如果ctrl + 减号   多按了一次，可执行它的相反操作。
 ```
